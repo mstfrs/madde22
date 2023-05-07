@@ -43,6 +43,7 @@ const ActivityDetails = () => {
   ];
 
   return (
+    
     <div className=" container mx-auto mb-20 flex flex-col justify-between gap-60 md:gap-4 ">
       <div className="bg-secondary md:h-auto h-full  w-full  flex flex-col md:flex-row items-center  md:pr-4 relative ">
         <div className="bg-black md:w-[200px] w-full md:h-full h-[212px] absolute"></div>

@@ -11,6 +11,7 @@ const Navbar = () => {
 
   const activities=useSelector((state)=>state.activities.activities)
   const types=useSelector((state)=>state.activities.activities.map((item)=>item.type))
+  
   const dispatch=useDispatch()
 
   const handleClick=  (props)=>{
