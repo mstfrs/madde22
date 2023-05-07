@@ -1,4 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Kullanılan Teknolojiler
+
+-NextJS
+
+-Tailwind CSS
+
+-Redux Toolkit
+
+-Ant Design
+
+-Mock Data
+
+-Responsive Design
+
+
+                                                        Project Screenshot
+                                       
+![image](https://user-images.githubusercontent.com/87162159/236687859-a9d41c3b-e8b2-4a6e-b3ae-ef8ea8366fa5.png)
+![image](https://user-images.githubusercontent.com/87162159/236688211-153c7c2b-e9f9-4799-82a9-8020b4f51e5f.png)
+
+
+
 
 ## Getting Started
 
