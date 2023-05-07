@@ -10,6 +10,8 @@ Kullanılan Teknolojiler
 
 -Mock Data
 
+-AntDesign message
+
 -Responsive Design
 
 
