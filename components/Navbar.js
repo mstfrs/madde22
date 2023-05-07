@@ -35,18 +35,20 @@ const Navbar = () => {
 </Link>
 <h3 className='font-bold text-2xl leading-10 '>ETKİNLİKLER</h3>
        </div>
-     <div className="flex md:justify-center pl-4 md:h-20 h-16 justify-start gap-8 leading-[26px] overflow-x-auto whitespace-nowrap container mx-auto">
-     <p id="0" className={` cursor-pointer ${0==categoryId && "text-primary font-bold underline underline-offset-[22px] decoration-4 "}`} onClick={(e)=>{
+     <div className="flex md:justify-center pl-4 md:h-20 h-16 justify-start gap-8 leading-[26px] overflow-x-auto whitespace-nowrap container mx-auto px-10 ">
+      <Link onClick={(e)=>{
       dispatch(loadFilteredActivities(activities)) 
-      setCategoryId(e.target.id)}} >Tüm Etkinlikler</p>
+      setCategoryId(e.target.id)}} href="/">
+     <p id="0" className={` cursor-pointer ${0==categoryId && "text-primary font-bold underline underline-offset-[22px] decoration-4 "}`}  >Tüm Etkinlikler</p></Link>
       
       {
         types.filter((item,index)=>(types.indexOf(item)===index)).map((type)=>(
-          <p key={type}  className={` cursor-pointer ${type==categoryId && "text-primary font-bold underline underline-offset-[22px] decoration-4 "}`} onClick={()=>{
+          <Link key={type}  onClick={()=>{
             handleClick(type)
             setFilterBy(type)
             setCategoryId(type)
-          }} >{type}</p>
+          }} href="/">
+          <p  className={` cursor-pointer ${type==categoryId && "text-primary font-bold underline underline-offset-[22px] decoration-4 "}`} >{type}</p></Link>
         ))
       } 
      

@@ -43,11 +43,11 @@ const ActivityDetails = () => {
   ];
 
   return (
-    <div className=" container mx-auto mb-20 ">
+    <div className=" container mx-auto mb-20 flex flex-col justify-between gap-60 md:gap-4 ">
       <div className="bg-secondary md:h-auto h-full  w-full  flex flex-col md:flex-row items-center  md:pr-4 relative ">
         <div className="bg-black md:w-[200px] w-full md:h-full h-[212px] absolute"></div>
         <div className=" flex flex-col md:flex-row items-center ml-9 mr-4 z-20 absolute md:static">
-          <div className="md:mr-10 items-center flex flex-col justify-center  md:text-primary  text-white text-2xl md:text-sm lg:text-base font-acme">
+          <div className="md:mr-10 items-center flex md:flex-col gap-2 mt-2 items-center justify-center  md:text-primary  text-white text-2xl md:text-sm lg:text-base font-acme">
             <p className="  items-center md:text-primary text-2xl ">
               {date.getDate()}</p>
               <p className="text-lg ">{months[date.getMonth()]}</p>
@@ -66,11 +66,11 @@ const ActivityDetails = () => {
                 {filtered && filtered.type}
               </p>
             </div>
-            <div className="relative my-4 w-[308px] h-[172px]">
+            <div className="relative w-[308px] h-[172px] md:w-[500px] md:h-[300px]">
               <Image
                 src={filtered && filtered.image}
                 fill
-                className="object-cover my-4 "
+                className="object-cover "
                 alt=""
               />
             </div>

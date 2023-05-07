@@ -17,7 +17,7 @@ const activitiesSlice=createSlice({
         },
         addFilterPlace:(state,action)=>{         
             state.filterByPlace.push(action.payload)
-            console.log(JSON.stringify(state.filterByPlace))        
+                  
         },
         removeFilterPlace:(state,action)=>{  
             const data=state.filterByPlace.filter((place)=>place!==action.payload)
@@ -25,19 +25,19 @@ const activitiesSlice=createSlice({
             
          
            const places=state.filterByPlace.map((item)=>item)
-            console.log(typeof(places.map((plc)=>plc)))
-            console.log(JSON.stringify(state.filteredActivities.filter((item)=>item.place===places.map((plc)=>plc))))                 
+            // console.log(typeof(places.map((plc)=>plc)))
+            // console.log(JSON.stringify(state.filteredActivities.filter((item)=>item.place===places.map((plc)=>plc))))                 
 
         },
         addToCalendar:(state,action)=>{
             state.addedToCalendar.push(action.payload)
-            console.log(JSON.stringify(state.addedToCalendar))
+            
 
         },
         removeFromCalendar:(state,action)=>{
             const data=state.addedToCalendar.filter((added)=>added!==action.payload)
             state.addedToCalendar=data
-            console.log(JSON.stringify(state.addedToCalendar))
+          
 
         }
     }

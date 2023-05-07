@@ -44,7 +44,7 @@ const StickyHeader = () => {
         <Modal title="Basic Modal" open={isCalendarModalOpen} onOk={handleOk} onCancel={handleCancel}>
         <Calendar cellRender={(date)=>{
          
-          activities.map((activity)=>console.log(new Date(activity.date).getDate()))
+          
           if (activities.map((activity)=>new Date(activity.date).getDate())==new Date(date).getDate() ) {
             console.log("ok")
           }
