@@ -14,11 +14,11 @@ const EventCard = ({activity}) => {
    const months = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"];
    const days = [ "Pazar","Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"];
   return (
-    <div className=" container mx-auto mb-20 ">
-      <div className="bg-secondary md:h-auto h-[410px]  md:w-full w-[360px] flex flex-col md:flex-row items-center  md:pr-4 relative ">
+    <div className=" container mx-auto mb-28 ">
+      <div className="bg-secondary md:h-auto h-[410px]  w-full pr-10 flex flex-col md:flex-row items-center  md:pr-4 relative ">
         <div className="bg-black md:w-[200px] w-full md:h-full h-[212px] absolute"></div>
         <div className=" flex flex-col md:flex-row items-center justify-center ml-9 md:mr-4 z-20 absolute md:static">
-        <div className="md:mr-10  flex flex-col justify-center items-center gap-2 md:text-primary  text-white text-2xl md:text-sm lg:text-base font-acme leading-6">
+        <div className="md:mr-10  flex md:flex-col flex-row justify-center items-center gap-2 md:text-primary  text-white text-2xl md:text-sm lg:text-base font-acme leading-6">
             <p className="  items-center md:text-primary text-2xl ">
               {date.getDate()}</p>
               <p className="text-lg ">{months[date.getMonth()]}</p>

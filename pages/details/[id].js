@@ -68,7 +68,7 @@ const ActivityDetails = () => {
             </div>
             <div className="relative my-4 w-[308px] h-[172px]">
               <Image
-                src="/images/kin.png"
+                src={filtered && filtered.image}
                 fill
                 className="object-cover my-4 "
                 alt=""
@@ -76,12 +76,12 @@ const ActivityDetails = () => {
             </div>
           </div>
 
-          <div className="flex gap-3 md:flex-col md:ml-8 mt-2 md:mt-0">
+          {/* <div className="flex gap-3 md:flex-col md:ml-8 mt-2 md:mt-0">
             <Button />
             <h3 className="lg:text-base text-sm leading-6 flex items-center gap-2">
               <BiPlusCircle /> Takvime Ekle
             </h3>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="ml-4 md:py-7 flex flex-col mt-2 md:gap-1 gap-[10px]">

@@ -31,7 +31,7 @@ const StickyHeader = () => {
   
   return (
     <>
-    <div className='flex justify-between w-full h-[52px] relative container mx-auto ' >
+    <div className='flex justify-between w-full h-[52px] relative container mx-auto md:px-4 ' >
         <div className='flex items-center font-normal md:text-primary gap-1 cursor-pointer' onClick={()=>setIsModalOpen(!isModalOpen)} >
             <FiFilter/>
             Filtreler

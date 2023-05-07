@@ -20,7 +20,7 @@ useEffect(() => {
     <>
     {
         activities.map((activity)=>(
-            <div key={activity.id}>
+            <div key={activity.id} className='container mx-auto'>
            
             <EventCard activity={activity} /></div>
             
