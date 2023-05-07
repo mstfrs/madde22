@@ -1,11 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
-
-import Navbar from '../components/Navbar'
-import EventCard from '../components/EventCard'
-import StickyHeader from '../components/StickyHeader'
-import FilterModal from '../components/FilterModal'
-import HomePage from './Home'
+import HomePage from './home'
 
 
 

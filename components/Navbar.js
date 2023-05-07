@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import data from "../utils/activities.json"
 import { useDispatch, useSelector } from "react-redux";
 import { loadActivities,loadFilteredActivities } from "../redux/activitiesSlice";
 
